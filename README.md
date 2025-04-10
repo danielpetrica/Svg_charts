@@ -1,8 +1,8 @@
 # Svg charts. Create charts as plain svg images
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/danielpetrica/svg-charts.svg?style=flat-square)](https://packagist.org/packages/danielpetrica/svg-charts)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/danielpetrica/svg-charts/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/danielpetrica/svg-charts/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/danielpetrica/svg-charts/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/danielpetrica/svg-charts/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/danielpetrica/svg_charts/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/danielpetrica/svg_charts/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/danielpetrica/svg_charts/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/danielpetrica/svg_charts/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/danielpetrica/svg-charts.svg?style=flat-square)](https://packagist.org/packages/danielpetrica/svg-charts)
 
 A PHP library to create svg charts for your data. No external js, no external dependencies just plain svg images
