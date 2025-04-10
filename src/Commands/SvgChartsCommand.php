@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace danielpetrica\SvgCharts\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class SvgChartsCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'svg-charts';
 
     public $description = 'My command';
 

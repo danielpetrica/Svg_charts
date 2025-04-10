@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace danielpetrica\SvgCharts;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use VendorName\Skeleton\Commands\SkeletonCommand;
+use danielpetrica\SvgCharts\Commands\SvgChartsCommand;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class SvgChartsServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -16,10 +16,10 @@ class SkeletonServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('skeleton')
+            ->name('svg-charts')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_migration_table_name_table')
-            ->hasCommand(SkeletonCommand::class);
+            ->hasMigration('create_svg_charts_table')
+            ->hasCommand(SvgChartsCommand::class);
     }
 }
