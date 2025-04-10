@@ -2,9 +2,9 @@
 
 namespace danielpetrica\SvgCharts;
 
+use danielpetrica\SvgCharts\Commands\SvgChartsCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use danielpetrica\SvgCharts\Commands\SvgChartsCommand;
 
 class SvgChartsServiceProvider extends PackageServiceProvider
 {
