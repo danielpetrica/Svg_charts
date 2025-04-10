@@ -2,9 +2,9 @@
 
 namespace danielpetrica\SvgCharts\Tests;
 
+use danielpetrica\SvgCharts\SvgChartsServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use danielpetrica\SvgCharts\SvgChartsServiceProvider;
 
 class TestCase extends Orchestra
 {
