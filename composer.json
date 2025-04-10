@@ -73,8 +73,14 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "support": {
-        "issues": "https://github.comdanielpetrica/Svg_charts/issues",
+        "issues": "https://github.com/danielpetrica/Svg_charts/issues",
         "security": "https://github.com/danielpetrica/Svg_charts/security/policy"
-    }
+    },
+    "funding": [
+           {
+               "type": "github",
+               "url": "https://github.com/danielpetrica
+           }
+       ]
 
 }
