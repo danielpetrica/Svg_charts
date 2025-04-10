@@ -17,9 +17,9 @@ class SvgChartsServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('svg-charts')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_svg_charts_table')
-            ->hasCommand(SvgChartsCommand::class);
+            ->hasConfigFile();
+            //->hasViews()
+            //->hasMigration('create_svg_charts_table')
+            //->hasCommand(SvgChartsCommand::class);
     }
 }
