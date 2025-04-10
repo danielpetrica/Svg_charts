@@ -2,7 +2,7 @@
     "name": "danielpetrica/svg-charts",
     "description": "A PHP library to create svg charts for your data. No external js, no external dependancies just plain svg images",
     "keywords": [
-        "Daniel, Andrei-Daniel Petrica",
+        "Daniel Petrica",
         "laravel",
         "svg-charts"
     ],
