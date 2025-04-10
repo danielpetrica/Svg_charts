@@ -167,14 +167,14 @@ class SvgCharts
             $groupedData[(string) ($item['timeSlice'] ?? 'Unknown')][] = $item;
         }
 
-        // Safely get max count with fallback
-        $counts = array_column($this->data, 'count');
-        $maxCount = ! empty($counts) ? max($counts) : 1;
+        // Get all counts, filtering out null/undefined values
+        $counts = array_filter(array_column($this->data, 'count'), 'is_numeric');
 
-        // If all counts are zero, set maxCount to 1 to avoid division by zero
-        if ($maxCount === 0) {
-            $maxCount = 1;
-        }
+        // Set max count with safe defaults (1 if empty, otherwise max value)
+        $maxCount = empty($counts) ? 1 : max($counts);
+
+        // Still ensure we never have 0 as maxCount to prevent division by zero
+        $maxCount = max(1, $maxCount);
 
         $maxBarHeight = $this->height - self::MARGIN_TOP - self::MARGIN_BOTTOM;
         $totalGroups = count($groupedData);
