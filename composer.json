@@ -12,6 +12,7 @@
         {
             "name": "danielpetrica",
             "email": "opensource@danielpetrica.com",
+            "homepage": "https://github.com/danielpetrica/",
             "role": "Developer"
         }
     ],
@@ -70,5 +71,10 @@
         }
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "support": {
+        "issues": "https://github.comdanielpetrica/Svg_charts/issues",
+        "security": "https://github.com/danielpetrica/Svg_charts/security/policy"
+    }
+
 }
