@@ -160,7 +160,7 @@ describe('SvgCharts functionality', function () {
 
         // Verify that bars are rendered at the bottom (zero height)
         expect($svg)
-            ->toContain('y="' . ($chart->getHeight() - SvgCharts::MARGIN_BOTTOM) . '"');
+            ->toContain('y="'.($chart->getHeight() - SvgCharts::MARGIN_BOTTOM).'"');
     });
 
     it('adjusts width for many data points', function () {

@@ -164,12 +164,12 @@ class SvgCharts
 
         $groupedData = [];
         foreach ($this->data as $item) {
-            $groupedData[(string)($item['timeSlice'] ?? 'Unknown')][] = $item;
+            $groupedData[(string) ($item['timeSlice'] ?? 'Unknown')][] = $item;
         }
 
         // Safely get max count with fallback
         $counts = array_column($this->data, 'count');
-        $maxCount = !empty($counts) ? max($counts) : 1;
+        $maxCount = ! empty($counts) ? max($counts) : 1;
 
         // If all counts are zero, set maxCount to 1 to avoid division by zero
         if ($maxCount === 0) {
@@ -260,16 +260,17 @@ class SvgCharts
         $svg = '<?xml version="1.0" standalone="no"?>';
         $svg .= '<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" ';
         $svg .= '"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">';
-        $svg .= '<svg width="' . $this->width . '" height="' . $this->height . '" ';
-        $svg .= 'viewBox="0 0 ' . $this->width . ' ' . $this->height . '" ';
+        $svg .= '<svg width="'.$this->width.'" height="'.$this->height.'" ';
+        $svg .= 'viewBox="0 0 '.$this->width.' '.$this->height.'" ';
         $svg .= 'xmlns="http://www.w3.org/2000/svg">';
-        $svg .= '<title>' . $this->escape($this->title) . '</title>';
+        $svg .= '<title>'.$this->escape($this->title).'</title>';
         $svg .= '<rect width="100%" height="100%" fill="#f9f9f9"/>';
         $svg .= '<text x="50%" y="50%" font-family="Arial" font-size="16" text-anchor="middle">No data available</text>';
         $svg .= '</svg>';
 
         return $svg;
     }
+
     /**
      * Saves the SVG chart to a file
      *
